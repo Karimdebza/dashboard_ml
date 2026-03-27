@@ -1,0 +1,91 @@
+/* Body */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #ece9e6, #ffffff);
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+.header {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px 0;
+    background: #1f3b5a;
+    color: #fff;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    border-radius: 0 0 15px 15px;
+}
+
+.logo {
+    width: 60px;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Container général */
+.container {
+    max-width: 1300px;
+    margin: auto;
+    padding: 30px;
+}
+
+/* Titres */
+.title {
+    font-size: 32px;
+    font-weight: 700;
+}
+
+/* Row & Cards */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.card {
+    background: #fff;
+    padding: 25px;
+    border-radius: 15px;
+    flex: 1;
+    min-width: 300px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+}
+
+/* Dropdown */
+.Select-control, .Select-menu-outer {
+    border-radius: 8px !important;
+}
+
+/* Graph */
+.graph {
+    margin-top: 20px;
+}
+
+/* Prediction */
+.prediction {
+    font-size: 28px;
+    font-weight: 700;
+    color: #1f3b5a;
+    text-align: center;
+    padding: 20px;
+    border-radius: 12px;
+    background: linear-gradient(135deg, #f0f4f8, #dce3ea);
+    box-shadow: inset 0 4px 10px rgba(0,0,0,0.05);
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .row {
+        flex-direction: column;
+    }
+}
